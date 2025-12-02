@@ -1,0 +1,28 @@
+services:
+  # The Database Service
+  timescaledb:
+    image: timescale/timescaledb-ha:pg14-latest
+    container_name: temptraverse_db
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=temptraverse
+    ports:
+      - "5432:5432"
+    volumes:
+      # This saves your data to a folder named 'pg_data' in your project, so you don't lose data when you turn off the computer.
+      - ./pg_data:/home/postgres/pgdata/data
+
+  # The Admin Interface
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: temptraverse_admin
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: jimilluhar@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - timescaledb
