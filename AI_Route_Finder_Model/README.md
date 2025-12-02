@@ -1,14 +1,13 @@
 # AI Route Finder Model
->This is an advanced AI analytical layer designed to process and utilize environmental data gathered from low-power hardware loggers.
+>This is an advanced AI software designed to process and utilize environmental data gathered from low-power hardware loggers.
 
 ![Dashboard Screenshot](Assets/Dashboard.png)
 
 ![Suggested Route Screenshot](Assets/Suggested_Route.png)
 
-This software was developed as part of an official academic project of Low-Power Environmental Data Logging. While the hardware component handles the efficient logging of GPS, Temperature, and Humidity data, this repository demonstrates how to use that "ground truth" data using Machine Learning.
+This software was developed as part of an official academic project of Low-Power Data Logging. While the hardware component handles the efficient logging of GPS, Temperature, and Humidity data, this repository demonstrates how to use that "ground truth" data using Machine Learning.
 
 This model not only enhances the understanding of local environmental conditions but also improves navigation by prioritizing comfort over mere speed.
-//change this-->Overall, TempTraverse represents a significant advancement in environmental data processing, demonstrating the potential of combining innovative hardware with cutting-edge AI to create practical solutions for real-world challenges.
 
 ## Project Context & Value Proposition
 
