@@ -44,7 +44,7 @@ The system follows a modular ETL (Extract, Transform, Load) pipeline:
 
   + **Geocoding**: Nominatim API for dynamic start/end point resolution.
 
-  + **Visualization**: Streamlit Dashboard with Plotly Mapbox for route-specific heatmaps.
+  + **Visualization**: Streamlit Dashboard with Plotly Mapbox.
 
 ## Tech Stack
 
@@ -64,7 +64,7 @@ The system follows a modular ETL (Extract, Transform, Load) pipeline:
 
 + Install Dependencies
 
-      pip install -r dependencies.txt
+      pip install -r Dependencies.txt
 
 
 + Data Pipeline (ETL)
